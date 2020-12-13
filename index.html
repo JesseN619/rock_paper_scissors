@@ -3,24 +3,50 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
+    <div id="page-wrapper">
+        <h1>ROCK &nbsp;PAPER &nbsp;SCISSORS</h1>
+        <h2>Click a button to play against the computer. Best of 5.</h2>
+        <div id="round-div">Round <span id="round-number">1</span></div>
 
-    <h1>ROCK PAPER SCISSORS</h1>
-    <h2>Click a button to play against the computer. Best of 5.</h2>
-    <h3>Round <span id="round-number">1</span></h3>
+        <div id="button-wrapper">
+            <button type="button" id="rock" class="rps-btn">
+                <img class="rps-img" src="rock.png" alt="Rock Icon">
+                Rock</button>
+            <button type="button" id="paper" class="rps-btn">
+                <img class="rps-img" src="paper.png" alt="Paper Icon">
+                Paper</button>
+            <button type="button" id="scissors" class="rps-btn">
+                <img class="rps-img" src="scissors.png" alt="Scissors Icon">
+                Scissors</button>
+        </div>
 
-    <button type="button" id="rock">Rock</button>
-    <button type="button" id="paper">Paper</button>
-    <button type="button" id="scissors">Scissors</button>
+        <div>Your Score</div>
+        <div id="score">
+            <span class="score" id="user-score">0</span> -
+            <span class="score" id="cpu-score">0</span> -
+            <span class="score" id="draw-score">0</span></div>
+        <div id="results-wrapper">
+            <div>Previous Round Results</div>
+            <div id="results"></div>
+        </div>
 
-    <div id="results"></div>
-    <div id="score">
-        <span id="user-score">0</span> - 
-        <span id="cpu-score">0</span> - 
-        <span id="draw-score">0</span></div>
+
+        <button type="button" id="reset">Play Again</button>
+
+        <footer class="footer">Icons made by
+            <a class="link" href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a>
+            from <a class="link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></footer>
+
+    </div>
+
+
 
     <script src="app.js"></script>
 </body>
